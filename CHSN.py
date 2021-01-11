@@ -1,6 +1,6 @@
 import telebot
 
-bot = telebot.TeleBot("1491942471:AAEded51LZEFr9Bi391xr5ZPTQawKcpZGoA", parse_mode=None)
+bot = telebot.TeleBot("1438804180:AAErCm_DWjlTS5X7vCFVoFqvrQ3thCOQRHk", parse_mode=None)
 
 joinedFile = open("joined.txt", "r")
 joinedUsers = set()
