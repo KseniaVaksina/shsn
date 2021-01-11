@@ -21,22 +21,24 @@ def mess(message):
     for user in joinedUsers:
         bot.send_message(user, message.text[message.text.find(' '):])
 
-
-@bot.message_handler(commands=['error'])
-#def process_help(message):
-#    var = "Если вы столкнулись с проблемой, то можете обратиться к следующим людям:"
- #   bot.send_message(message.from_user.id, var)
-  #  print(var)
-
-
+        
 @bot.message_handler(commands=['help'])
 def process_help(message):
     var = "В данном боте вы можете воспользоваться следующими командами: \n" \
           "/contacts - основные контакты организаторов и вожатых \n" \
-          "/students - контакты студентов, готовых ответить вам на все вопросы о Вышке"
+          "/students - контакты студентов, готовых ответить вам на все вопросы о Вышке \n"\
+          "/timetable - ссылка на расписание" 
     bot.send_message(message.from_user.id, var)
     print(var)
 
+@bot.message_handler(commands=['timetable'])
+def process_help(message):
+    var = "Вот ссылочка на расписание: \n" \
+          "" 
+    bot.send_message(message.from_user.id, var)
+    print(var)
+    
+    
 @bot.message_handler(commands=['contacts'])
 def process_help(message):
     var = "Если вы столкнулись с проблемой, то можете обратиться к следующим людям:\n" \
