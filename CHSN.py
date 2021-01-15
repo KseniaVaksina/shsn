@@ -52,6 +52,7 @@ def process_help(message):
           "Илья Кузьмин – глава внеучебной программы. +7 (917) 700-62-18. https://vk.com/existancevk \n" \
           "Анастасия Ли – глава PR. +7 (914) 742-97-05. https://vk.com/nastya_chen \n" \
           "Дмитрий Пикулькин – глава технического сопровождения. +7 (983) 518-60-25 https://vk.com/id553263075  "
+    disable_web_page_preview = True
     bot.send_message(message.from_user.id, var)
     print(var)
 
