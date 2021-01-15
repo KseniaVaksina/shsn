@@ -29,9 +29,10 @@ def mess(message):
 @bot.message_handler(commands=['help'])
 def process_help(message):
     var = "В данном боте вы можете воспользоваться следующими командами: \n" \
+          "/timetable – ссылка на расписание \n" \
+          "/link – ссылка на все онлайн-мероприятия" \
           "/contacts – основные контакты организаторов \n" \
-          "/students – контакты студентов, готовых ответить вам на все вопросы о Вышке \n"\
-          "/timetable – ссылка на расписание" 
+          "/students – контакты студентов, готовых ответить вам на все вопросы о Вышке"
     bot.send_message(message.from_user.id, var)
     print(var)
 
@@ -51,7 +52,7 @@ def process_help(message):
           "Алина Хаматдинова – глава учебной программы.+7 (985) 198-11-86. https://vk.com/alina.khamat \n" \
           "Илья Кузьмин – глава внеучебной программы. +7 (917) 700-62-18. https://vk.com/existancevk \n" \
           "Анастасия Ли – глава PR. +7 (914) 742-97-05. https://vk.com/nastya_chen \n" \
-          "Дмитрий Пикулькин – глава технического сопровождения. +7 (983) 518-60-25 https://vk.com/id553263075  "
+          "Дмитрий Пикулькин – глава технического сопровождения. +7 (983) 518-60-25 https://vk.com/id553263075 "
     bot.send_message(message.from_user.id, var, disable_web_page_preview = True)
     print(var)
 
@@ -60,7 +61,16 @@ def process_help(message):
     var = "Вы можете узнать подробнее о жизни Вышки и факультета социальных наук у этих людей:"
     bot.send_message(message.from_user.id, var)
     print(var)
-
+    
+    
+@bot.message_handler(commands=['link'])
+def process_help(message):
+    var = "Вот ссылочка на все онлайн-мероприятия:\n" \
+          "https://zoom.us/j/8281678013?pwd=KzA3TVdrVTlGS0lWeU0yUDh6Tjkxdz09#success\n" \
+          "Идентификатор конференции: 828 167 8013\n" \
+          "Код доступа: UWq295"
+    bot.send_message(message.from_user.id, var)
+    print(var)
 
 
 bot.polling(none_stop=True, timeout=123)
