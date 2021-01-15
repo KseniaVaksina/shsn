@@ -32,7 +32,7 @@ def process_help(message):
           "/timetable – ссылка на расписание \n" \
           "/link – ссылка на все онлайн-мероприятия \n" \
           "/social_net – ссылки на основные социальные сети  \n" \
-          "/contacts – основные контакты организаторов \n" \
+          "/contacts – основные контакты организаторов" 
     bot.send_message(message.from_user.id, var)
     print(var)
 
