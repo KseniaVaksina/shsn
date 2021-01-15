@@ -33,7 +33,6 @@ def process_help(message):
           "/link – ссылка на все онлайн-мероприятия \n" \
           "/social_net – ссылки на основные социальные сети  \n" \
           "/contacts – основные контакты организаторов \n" \
-          "/students – контакты студентов, готовых ответить вам на все вопросы о Вышке"
     bot.send_message(message.from_user.id, var)
     print(var)
 
