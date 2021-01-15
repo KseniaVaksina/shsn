@@ -75,8 +75,8 @@ def process_help(message):
 @bot.message_handler(commands=['social_net'])
 def process_help(message):
     var = "Вот ссылки на основные социальные сети:\n" \
-          "https://t.me/joinchat/EbDf81Q3jvw68Gdo – общий чат в Telegram. ОБЯЗАТЕЛЬНО ПОДПИШИСЬ! \n" \
-          "https://t.me/school_fsn – канал в Telegram \n" \
+          "https://t.me/joinchat/EbDf81Q3jvw68Gdo – общий чат в Telegram. \n" \
+          "https://t.me/school_fsn – канал в Telegram.  ОБЯЗАТЕЛЬНО ПОДПИШИСЬ! \n" \
           "https://t.me/addstickers/school_fsn – стикеры в Telegram \n"\
           "https://instagram.com/school_fsn – страничка в Instagram \n" \
           "https://vk.com/school_fsn – открытая группа ВКонтакте \n" \
