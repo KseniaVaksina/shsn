@@ -25,7 +25,7 @@ def mess(message):
 @bot.message_handler(commands=['help'])
 def process_help(message):
     var = "В данном боте вы можете воспользоваться следующими командами: \n" \
-          "/contacts - основные контакты организаторов и вожатых \n" \
+          "/contacts - основные контакты организаторов \n" \
           "/students - контакты студентов, готовых ответить вам на все вопросы о Вышке \n"\
           "/timetable - ссылка на расписание" 
     bot.send_message(message.from_user.id, var)
