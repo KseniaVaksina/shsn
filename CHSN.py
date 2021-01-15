@@ -38,7 +38,7 @@ def process_help(message):
 @bot.message_handler(commands=['timetable'])
 def process_help(message):
     var = "Вот ссылочка на расписание: \n" \
-          "" 
+          "https://docs.google.com/spreadsheets/d/1fiXalUl5fkmh0THK3X8dEwTZMgYW6zK5L-VP94AX94I/edit#gid=1916275378" 
     bot.send_message(message.from_user.id, var)
     print(var)
     
