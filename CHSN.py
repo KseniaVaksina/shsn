@@ -15,6 +15,10 @@ def startJoin(message):
         joinedFile = open("joined.txt", "a")
         joinedFile.write(str(message.chat.id) + "\n")
         joinedUsers.add(message.chat.id)
+    var = "Чтобы посмотреть список команд, напиши /help"    
+    bot.send_message(message.from_user.id, var)
+    print(var)
+        
 
 @bot.message_handler(commands=['special'])
 def mess(message):
