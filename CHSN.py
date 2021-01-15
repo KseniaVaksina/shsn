@@ -78,7 +78,7 @@ def process_help(message):
     var = "Вот ссылки на основные социальные сети:\n" \
           "https://t.me/school_fsn – канал в Telegram \n" \
           "https://instagram.com/school_fsn – страничка в Instagram"
-    bot.send_message(message.from_user.id, var)
+    bot.send_message(message.from_user.id, var, disable_web_page_preview = True)
     print(var)
 
 
