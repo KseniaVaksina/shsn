@@ -31,6 +31,7 @@ def process_help(message):
     var = "В данном боте вы можете воспользоваться следующими командами: \n" \
           "/timetable – ссылка на расписание \n" \
           "/link – ссылка на все онлайн-мероприятия \n" \
+          "/social_net – ссылки на основные социальные сети  \n" \
           "/contacts – основные контакты организаторов \n" \
           "/students – контакты студентов, готовых ответить вам на все вопросы о Вышке"
     bot.send_message(message.from_user.id, var)
@@ -69,6 +70,14 @@ def process_help(message):
           "https://zoom.us/j/8281678013?pwd=KzA3TVdrVTlGS0lWeU0yUDh6Tjkxdz09#success\n" \
           "Идентификатор конференции: 828 167 8013\n" \
           "Код доступа: UWq295"
+    bot.send_message(message.from_user.id, var)
+    print(var)
+    
+@bot.message_handler(commands=['social_net'])
+def process_help(message):
+    var = "Вот ссылки на основные социальные сети:\n" \
+          "https://t.me/school_fsn – канал в Telegram \n" \
+          "https://instagram.com/school_fsn – страничка в Instagram"
     bot.send_message(message.from_user.id, var)
     print(var)
 
