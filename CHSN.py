@@ -1,4 +1,5 @@
 import telebot
+from telebot import *
 
 bot = telebot.TeleBot("1438804180:AAErCm_DWjlTS5X7vCFVoFqvrQ3thCOQRHk", parse_mode=None)
 
