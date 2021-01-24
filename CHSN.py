@@ -71,9 +71,10 @@ def callback_worker(call):
               'Софья Захарова, 2 курс – https://vk.com/ssssoncha \n' \
               'Алёна Харитонова, 3 курс – https://vk.com/alykharit'
     elif call.data == 'lyc':
-        var = 'По всем интересующим вас вопросам о Лицее НИУ ВШЭ, в том числе и организационным моментам,' \
-              ' вы можете обратиться к:\n' \
+        var = 'По всем интересующим вас вопросам о Лицее НИУ ВШЭ, в том числе и организационным моментам, вы можете обратиться к этим студентам:\n' \
               'Дмитрий Максименко, выпускник Лицея – https://vk.com/maximenko_dm \n' \
+              'Лариса Преображенская, выпускница Лицея – https://vk.com/plutotlavie \n' \
+              ' \n' \
               'А также вся актуальная информация о Лицее – https://vk.com/hsemeetingarea'
     bot.send_message(call.message.chat.id, var, disable_web_page_preview = True)
         
