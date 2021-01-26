@@ -50,7 +50,9 @@ def callback_worker(call):
               'Чен Сун Хи (Анастасия Ли), 2 курс – https://vk.com/nastya_chen \n' \
               'Елизавета Толстогузова, 2 курс – https://vk.com/lizok.keepsintouch \n' \
               'Маргарита Жданкина, 3 курс – https://vk.com/mamiezh \n' \
-              'Ксения Ваксина, 3 курс – https://vk.com/id415749948 '
+              'Ксения Ваксина, 3 курс – https://vk.com/id415749948 \n' \
+              'Валерия Мошенко, 4 курс – https://vk.com/leruff \n' \
+              'Дарья Жукова, 4 курс – https://vk.com/prosto_zhuk'
     elif call.data == 'gmu':
         var = 'По всем интересующим вас вопросам об ОП «ГМУ» вы можете обратиться к этим студентам: \n' \
               'Дарья Дергачева, 2 курс – https://vk.com/d.dergacheva \n' \
